@@ -1,1 +1,17 @@
-/* You can add global styles to this file, and also import other style files */
+@import 'global';
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root,
+html {
+  font-size: 62.5%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  letter-spacing: 0.05rem;
+}
