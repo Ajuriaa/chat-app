@@ -3,6 +3,7 @@ $white: #FFF;
 $black: #000;
 $blue: #52CCDE; //#88cfe0;
 $red: #db473c;
+$purple: #9747FF;
 
 $scheme: (
     system-blue: (
@@ -10,9 +11,10 @@ $scheme: (
     ),
     firm-gray: (
         default: #8B8F92,
-        100: #ACAFB1,
-        200: #BDBFC1,
-        300: #E0E1E2
+        100: #616164,
+        200: #ACAFB1,
+        300: #BDBFC1,
+        400: #E0E1E2
     )
 );
 //

@@ -1,0 +1,129 @@
+@import 'global';
+
+.container {
+  @include flex-center;
+  height: 100%;
+  width: 100%;
+  background: rgb(100,250,200);
+  background: linear-gradient(344deg, rgba(100,250,200,1) 0%, rgba(140,232,225,1) 51%, rgba(180,218,253,1) 100%);
+}
+
+.login-wrapper {
+  @include flex-center;
+  height: 70%;
+  width: 60%;
+
+  .form {
+    @include flex-center-column;
+    align-items: flex-start;
+    background-color: $white;
+    border-radius: 2rem 0 0 2rem;
+    width: 35%;
+    height: 100%;
+  }
+}
+
+.panel {
+  @include flex-center-column;
+  background-color: #f4f0fb;
+  width: 65%;
+  height: 100%;
+  border-radius: 0 2rem 2rem 0;
+
+  .image {
+    max-height: 25rem;
+  }
+
+  .panel-label {
+    font-size: 1.8rem;
+    color: setColor(firm-gray, 100);
+  }
+
+  .panel-title {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    font-weight: bold;
+    color: $purple;
+    margin: 0 0 3rem 0;
+  }
+}
+
+.form-header {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header-label {
+  font-size: 1.2rem;
+  color: setColor(firm-gray, 100);
+}
+
+.header-wrapper, .login-form {
+  margin-left: 5rem;
+}
+
+.button {
+  align-self: center;
+  height: 5rem;
+  width: 80%;
+  border-radius: 3rem;
+  background-color: $purple;
+  color: $white;
+  font-size: 1.5rem;
+  border: none;
+}
+
+.login-form {
+  height: 50%;
+  width: 90%;
+  margin-top: 3rem;
+  color: setColor(firm-gray, 100);
+
+  .form-label {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+
+  .form-field {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 1rem 0 3rem 0;
+
+    .input {
+      height: 3.5rem;
+      width: 100%;
+      margin-right: 5rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding-left: 3.5rem;
+    }
+
+    .icon {
+      position: absolute;
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+
+    .password {
+      cursor: pointer;
+      margin: 0;
+      right: 6rem;
+    }
+  }
+}
+
+.register-label {
+  align-self: center;
+  display: flex;
+  color: setColor(firm-gray, 100);
+  font-size: 1.4rem;
+
+  .register {
+    color: $purple;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+  }
+}

@@ -1,6 +1,26 @@
 <div class="container">
   <div class="form">
-
+    <h1>Sign Up!</h1>
+    <p>Join the chat app by filling the registration form.</p>
+    <form [formGroup]="signupForm" class="form-field">
+      <input
+        class="input"
+        placeholder="username or email"
+        formControlName="email"
+        maxlength="25"
+        minlength="1"
+        required
+      >
+      <input
+        class="input"
+        placeholder="password"
+        formControlName="password"
+        maxlength="50"
+        minlength="1"
+        type="password"
+        required
+      >
+    </form>
   </div>
   <div class="panel">
 
